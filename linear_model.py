@@ -7,6 +7,8 @@ import numpy as np
 x_data = np.float32(np.random.rand(2, 100)) # 随机输入
 y_data = np.dot([0.100, 0.200], x_data) + 0.300
 
+print y_data
+
 # 构造一个线性模型
 # 
 b = tf.Variable(tf.zeros([1]))
@@ -26,9 +28,9 @@ sess = tf.Session()
 sess.run(init)
 
 # 拟合平面
-for step in xrange(0, 201):
-    sess.run(train)
-    if step % 20 == 0:
-        print step, sess.run(W), sess.run(b)
+#for step in xrange(0, 201):
+#    sess.run(train)
+#    if step % 20 == 0:
+#        print step, sess.run(W), sess.run(b)
 
 # 得到最佳拟合结果 W: [[0.100  0.200]], b: [0.300]

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#递度下降
 import tensorflow as tf
 import os
 #https://github.com/backstopmedia/tensorflowbook/tree/master/chapters
